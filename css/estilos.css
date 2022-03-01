@@ -1,0 +1,216 @@
+/* Material
+
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+
+ */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+ :root{
+   --body-color: hsl(217, 54%, 11%);
+   --card-color: hsl(216, 50%, 16%);
+   --line-color: hsl(215, 32%, 27%);
+
+   --Typography-color: hsl(215, 51%, 70%);
+   --hover-color: hsl(178, 100%, 50%);
+   --title-color: hsl(0, 0%, 100%);
+ }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--body-color);
+  font-family: 'Outfit', sans-serif;
+}
+
+.main__card{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__hero{
+  margin: 0 10px;
+  width: 350px;
+  height: 596px;
+  background-color: var(--card-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.overlay__hero--img{
+  margin: 25px;
+  
+  max-height: 305px;
+  position: relative;
+}
+
+.img__hero{
+  width: 100%;
+  max-width: 305px;
+  max-height: 305px;
+  border-radius: 10px;
+}
+.img__hero:hover{
+  cursor: pointer;
+}
+
+.img__hero--icon{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 99%;
+  background-color: hsl(178, 100%, 50%, 50%);
+  border-radius: 10px;
+  z-index: 999;
+  opacity: 0;
+}
+.img__hero--icon:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon__view{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.texts__hero{
+  margin-left: 25px;
+  width: 90%;
+  text-align: left;
+}
+
+.title__hero{
+  font-size: 1.4rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+.title__hero:hover{
+  color: var(--hover-color);
+}
+
+.paragraph__hero{
+  margin: 18px 0 0 ;
+  line-height: 27px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--Typography-color);
+}
+.stats__hero{
+  padding: 1.2rem 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.stats__hero,
+.substats__hero{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.stats__hero--one{
+  font-weight: 600;
+  color: var(--hover-color);
+}
+
+.ethereum__img{
+  margin: 2px 7px 0 0;
+  display: inline-block;
+}
+
+.stats__hero--two{
+  margin-right: 15px;
+  color: var(--Typography-color);
+}
+
+.clock__img{
+  margin: 2px 7px 0 0;
+}
+
+
+.text__hero--footer{
+  padding: 6px 98px 0 0;
+  display: inline;
+  position: absolute;
+  padding-left: 3rem;
+  font-weight: 400;
+  color: var(--Typography-color);
+}
+.span__footer{
+  color: var(--title-color);
+  cursor: pointer;
+}
+.span__footer:hover{
+  color: var(--hover-color);
+}
+
+.footer__hero{
+  margin: 18px 0 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar__img{
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 270px) {
+  .text__hero--footer{
+    margin-left: 10px;
+    padding: 6px 98px 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.attribution{
+  position: relative;
+  display: flex;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #000;
+  z-index: -1;
+}
+
+.attribution__a{
+  font-size: 12px;
+  text-decoration: none;
+}
