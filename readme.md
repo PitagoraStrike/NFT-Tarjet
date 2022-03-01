@@ -21,7 +21,7 @@ El desafío es desarrollar esta tarjeta de componente lo más parecido posible a
 - Card, imagenes y contenido ajustable para dispositivos moviles
 
 ### LINK
-Solution URL:
+Solution URL: [https://tarjet-ntf.netlify.app/](https://tarjet-ntf.netlify.app/)
 
 ### ¿COMENTARIOS?
 Si tienes comentarios o dudas no dudes en escribirme en mis redes sociales
